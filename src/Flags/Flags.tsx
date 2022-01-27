@@ -9,6 +9,8 @@ import {
   SectionTitle,
   FlagsContainer,
 } from "./Flags.styled";
+// Flags component renders the main sections of the data;
+// Each section renders "FlagItem" as a reusable component;
 
 interface Props {
   data: {

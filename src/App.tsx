@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Flags from "./Flags/Flags";
 
+// App component with two main fetch data functions:
+// getData to fetch all data with GET method;
+// updateItem to upsert data with params passed in.
 const App = () => {
   const [data, setData] = useState<any>(undefined);
 
@@ -49,7 +52,6 @@ const App = () => {
   useEffect(() => {
     getData();
   }, []);
-  // console.log("data", data);
 
   if (!data) return <div>LOADING</div>;
   return <Flags data={data} updateItem={updateItem} />;

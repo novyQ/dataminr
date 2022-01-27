@@ -19,20 +19,18 @@ const db = new Low(adapter);
 // handler
 async function handleDataPost(body, res) {
   const postParamBody = JSON.parse(body);
-  // console.log("postParamBody", postParamBody);
 
   await db.read();
-  // to-do: investigate why chaining assign does not work
-  // await db.chain.get("general").find({ flag_id: 1 }).assign({ isOn: false });
+
   const section = db.data[postParamBody.section];
   if (!section) {
-    console.log(`section ${postParamBody.section} not found`);
+    console.error(`section ${postParamBody.section} not found`);
     return;
   }
 
   const element = section.find((el) => el.flag_id === postParamBody.flag_id);
   if (!element) {
-    console.log(`element id ${postParamBody.flag_id} not found`);
+    console.error(`element id ${postParamBody.flag_id} not found`);
   }
 
   if (!postParamBody.subflag_id) {

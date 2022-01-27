@@ -6,6 +6,8 @@ import SubFlags from "../SubFlags/SubFlags";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Box, Field, NameText } from "./FlagItem.styled";
+// FlagItem renders information of each flag, with user interfaction that calls updateItem function;
+// If a FlagItem has subflags, it renders a SubFlags component
 
 interface FlagItemProps extends FlagType {
   updateItem: (param: any) => void;
