@@ -1,0 +1,111 @@
+{
+  "general": [
+    {
+      "flag_id": 1,
+      "name": "case management",
+      "subflags": [],
+      "isOn": true
+    },
+    {
+      "flag_id": 2,
+      "name": "map timeline",
+      "isOn": true,
+      "subflags": []
+    },
+    {
+      "flag_id": 3,
+      "name": "views & briefing",
+      "isOn": false,
+      "subflags": []
+    },
+    {
+      "flag_id": 4,
+      "name": "notifications",
+      "isOn": true,
+      "subflags": []
+    },
+    {
+      "flag_id": 5,
+      "name": "mass communication",
+      "isOn": true,
+      "subflags": []
+    },
+    {
+      "flag_id": 6,
+      "name": "traffic cameras",
+      "isOn": false,
+      "subflags": []
+    }
+  ],
+  "settings": [
+    {
+      "flag_id": 7,
+      "name": "audit log",
+      "isOn": true,
+      "subflags": []
+    },
+    {
+      "flag_id": 8,
+      "name": "users",
+      "isOn": true,
+      "subflags": [
+        {
+          "subflag_id": 10,
+          "name": "users add",
+          "isOn": true,
+          "subflags": []
+        },
+        {
+          "subflag_id": 11,
+          "name": "users delete",
+          "isOn": true,
+          "subflags": []
+        },
+        {
+          "subflag_id": 12,
+          "name": "users edit",
+          "isOn": true,
+          "subflags": []
+        },
+        {
+          "subflag_id": 13,
+          "name": "max users",
+          "isOn": true,
+          "subflags": [],
+          "inputNotes": {
+            "input": "20",
+            "options": [
+              "10",
+              "20",
+              "30",
+              "40"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "flag_id": 14,
+      "name": "alert Manager",
+      "isOn": false,
+      "subflags": []
+    },
+    {
+      "flag_id": 15,
+      "name": "alert rules",
+      "isOn": true,
+      "subflags": [],
+      "inputNotes": {
+        "input": "20",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "40"
+        ]
+      }
+    }
+  ]
+}
